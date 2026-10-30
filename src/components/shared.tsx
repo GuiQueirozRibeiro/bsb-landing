@@ -7,7 +7,9 @@ import { motion } from "motion/react";
 
 export const LINK_APP_STORE = "https://apps.apple.com/app/id6744043956";
 export const LINK_GOOGLE_PLAY = "https://play.google.com/store/apps/details?id=br.com.bsbengenhariacondominial.sgp";
-export const LINK_ADMIN = "https://admin.bsbengenhariacondominial.com.br";
+export const LINK_ADMIN = "https://bsbengenhariacondominial.com.br";
+export const LINK_SITE_INSTITUCIONAL = "https://bsbengenhariacondominial.com";
+export const LINK_CURSO_SINDICO = "https://sindicoprofissionaloficial.com.br/sindico-profissional-2/";
 export const WHATSAPP_NUMERO = "5561996989009";
 
 export const linkWhatsApp = (origem = "landing") =>

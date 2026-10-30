@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { label: "Recursos do App", href: "#recursos" },
   { label: "NBR 5674 & Laudos", href: "#normas" },
   { label: "Comparativo", href: "#comparativo" },
+  { label: "A Empresa & Diógenes", href: "#sobre" },
   { label: "Dúvidas Frequentes", href: "#faq" },
 ];
 

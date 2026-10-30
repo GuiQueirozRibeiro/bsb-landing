@@ -4,6 +4,7 @@ import { NumerosImpacto } from "@/components/NumerosImpacto";
 import { RecursosComModal } from "@/components/RecursosComModal";
 import { ComparativoSection } from "@/components/ComparativoSection";
 import { EngenhariaSection } from "@/components/EngenhariaSection";
+import { EmpresaEDiogenesSection } from "@/components/EmpresaEDiogenesSection";
 import { FaixaChamada } from "@/components/FaixaChamada";
 import { FaqSection } from "@/components/FaqSection";
 import { Footer } from "@/components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <ComparativoSection />
       </div>
       <EngenhariaSection />
+      <EmpresaEDiogenesSection />
       <FaixaChamada />
       <FaqSection />
       <Footer />
