@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bsbengenhariacondominial.com.br"),
   title: "SGP Condomínios | BSB Engenharia Condominial",
   description:
-    "Aplicativo oficial da BSB Engenharia Condominial para síndicos e gestores. Manutenção sob a NBR 5674, laudos com ART, governança com 3 cotações e transparência financeira.",
+    "Aplicativo oficial da BSB Engenharia Condominial para síndicos e gestores. Manutenção preventiva sob a NBR 5674, laudos com ART no CREA-DF, governança com 3 cotações e transparência financeira.",
   openGraph: {
     title: "SGP Condomínios | A engenharia do seu condomínio na palma da mão",
     description:
@@ -23,16 +23,23 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/brand/logo-oficial.png",
-        width: 1200,
-        height: 630,
-        alt: "BSB Engenharia Condominial - SGP Condomínios",
+        url: "/icon-512.png",
+        width: 512,
+        height: 512,
+        alt: "SGP Condomínios - BSB Engenharia Condominial",
       },
     ],
   },
   icons: {
-    icon: "/brand/logo-oficial.png",
-    apple: "/brand/logo-oficial.png",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
   },
 };
 

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bsbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0582C"/>
+      <stop offset="100%" stop-color="#D44820"/>
+    </linearGradient>
+    <linearGradient id="buildingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <filter id="dropGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle App Background -->
+  <rect width="512" height="512" rx="115" fill="url(#bsbGrad)"/>
+  
+  <!-- Subtle Inner Border Highlight -->
+  <rect x="4" y="4" width="504" height="504" rx="111" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"/>
+
+  <g filter="url(#dropGlow)" transform="translate(16, 12)">
+    <!-- Skyscraper Buildings Silhouette -->
+    <!-- Tower Left -->
+    <path d="M170 190 L215 170 L215 360 L170 360 Z" fill="url(#buildingGrad)"/>
+    <!-- Tower Center High-Rise -->
+    <path d="M225 100 L275 80 L275 360 L225 360 Z" fill="url(#buildingGrad)"/>
+    <!-- Tower Right -->
+    <path d="M285 145 L325 130 L325 360 L285 360 Z" fill="url(#buildingGrad)"/>
+    <!-- Building Windows / Architectural Grid details -->
+    <rect x="237" y="130" width="6" height="18" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="255" y="130" width="6" height="18" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="237" y="165" width="6" height="18" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="255" y="165" width="6" height="18" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="237" y="200" width="6" height="18" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="255" y="200" width="6" height="18" rx="2" fill="#F0582C" opacity="0.9"/>
+    
+    <rect x="182" y="210" width="6" height="14" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="197" y="210" width="6" height="14" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="182" y="240" width="6" height="14" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="197" y="240" width="6" height="14" rx="2" fill="#F0582C" opacity="0.9"/>
+    
+    <rect x="295" y="165" width="6" height="14" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="308" y="165" width="6" height="14" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="295" y="195" width="6" height="14" rx="2" fill="#F0582C" opacity="0.9"/>
+    <rect x="308" y="195" width="6" height="14" rx="2" fill="#F0582C" opacity="0.9"/>
+
+    <!-- Engineering Gear Foundation -->
+    <g transform="translate(240, 340)">
+      <!-- 12-tooth gear -->
+      <path d="M 108.33 -19.10 L 108.33 19.10 L 86.92 13.77 L 82.16 31.54 L 103.37 37.62 L 84.26 70.71 L 68.39 55.38 L 55.38 68.39 L 70.71 84.26 L 37.62 103.37 L 31.54 82.16 L 13.77 86.92 L 19.10 108.33 L -19.10 108.33 L -13.77 86.92 L -31.54 82.16 L -37.62 103.37 L -70.71 84.26 L -55.38 68.39 L -68.39 55.38 L -84.26 70.71 L -103.37 37.62 L -82.16 31.54 L -86.92 13.77 L -108.33 19.10 L -108.33 -19.10 L -86.92 -13.77 L -82.16 -31.54 L -103.37 -37.62 L -84.26 -70.71 L -68.39 -55.38 L -55.38 -68.39 L -70.71 -84.26 L -37.62 -103.37 L -31.54 -82.16 L -13.77 -86.92 L -19.10 -108.33 L 19.10 -108.33 L 13.77 -86.92 L 31.54 -82.16 L 37.62 -103.37 L 70.71 -84.26 L 55.38 -68.39 L 68.39 -55.38 L 84.26 -70.71 L 103.37 -37.62 L 82.16 -31.54 L 86.92 -13.77 Z" fill="#FFFFFF"/>
+      <!-- Gear Center Ring (Navy / Dark Engineering contrast) -->
+      <circle cx="0" cy="0" r="58" fill="#0F172A"/>
+      <circle cx="0" cy="0" r="52" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="4 3"/>
+      
+      <!-- Minerva Bust Silhouette in White -->
+      <!-- Helmet Crest -->
+      <path d="M-12 -28 C-6 -42 16 -38 20 -24 C22 -15 14 -10 10 -6 L-10 -6 Z" fill="#FFFFFF"/>
+      <!-- Face profile -->
+      <path d="M-2 -8 L12 -8 L8 4 L14 4 L6 16 L2 22 L-8 22 L-10 12 L-6 4 Z" fill="#FFFFFF"/>
+      <!-- Helmet Feathers / Crest Arc -->
+      <path d="M-18 -22 C-14 -35 2 -40 16 -34 C12 -30 2 -26 -4 -20 Z" fill="#F0582C"/>
+    </g>
+  </g>
+</svg>

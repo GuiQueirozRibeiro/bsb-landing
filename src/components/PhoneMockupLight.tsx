@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Wrench,
@@ -92,9 +93,14 @@ export function PhoneMockupLight({ onVideoOpen }: PhoneMockupLightProps) {
             {/* App Header (Clean Official Theme) */}
             <div className="bg-white border-b border-slate-200/80 px-4 pt-2 pb-3 shadow-2xs">
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#F0582C] to-[#D44820] font-black text-white shadow-xs text-xs">
-                    BSB
+                <div className="flex items-center gap-2.5">
+                  <div className="relative h-9 w-9 overflow-hidden rounded-xl shadow-xs">
+                    <Image
+                      src="/icon-512.png"
+                      alt="Ícone do Aplicativo SGP Condomínios"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                   <div>
                     <h3 className="text-xs font-bold leading-tight text-slate-900">SGP Condomínios</h3>
@@ -345,3 +351,4 @@ export function PhoneMockupLight({ onVideoOpen }: PhoneMockupLightProps) {
     </div>
   );
 }
+

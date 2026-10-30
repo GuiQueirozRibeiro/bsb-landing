@@ -270,3 +270,4 @@ export function Faixa({
     </div>
   );
 }
+

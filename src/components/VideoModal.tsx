@@ -122,3 +122,4 @@ export function VideoModal({ isOpen, onClose }: VideoModalProps) {
     </AnimatePresence>
   );
 }
+

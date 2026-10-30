@@ -92,16 +92,19 @@ export function EngenhariaSection() {
           <div className="lg:col-span-5 flex justify-center">
             <Revelar atraso={0.25} className="w-full max-w-md">
               <div className="rounded-[36px] bg-gradient-to-b from-slate-900 via-slate-850 to-slate-900 p-8 border border-slate-800 shadow-2xl text-center space-y-6">
-                <div className="mx-auto relative h-32 w-32 rounded-3xl bg-white p-4 shadow-xl flex items-center justify-center">
+                <div className="mx-auto relative h-32 w-32 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center border-2 border-white/20">
                   <Image
-                    src="/brand/logo-oficial.png"
-                    alt="Símbolo Minerva BSB Engenharia"
+                    src="/icon-512.png"
+                    alt="Novo Ícone Oficial SGP Condomínios e BSB Engenharia"
                     fill
-                    className="object-contain p-2"
+                    className="object-cover"
                   />
                 </div>
 
                 <div className="space-y-1.5">
+                  <div className="inline-block rounded-full bg-orange-500/20 px-3 py-1 text-[10px] font-black uppercase tracking-wider text-orange-400">
+                    Novo Ícone & Favicon Oficial
+                  </div>
                   <h3 className="text-xl font-bold text-white">BSB Engenharia Condominial</h3>
                   <p className="text-xs text-slate-400">Projetos • Obras • Manutenção Técnica</p>
                 </div>
