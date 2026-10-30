@@ -72,3 +72,4 @@ export function SplitTitle({
     </h2>
   );
 }
+

@@ -1,8 +1,10 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import { StoreBadges } from "./StoreBadges";
-import { ShieldCheck, Mail, Phone, MapPin } from "lucide-react";
+import { ShieldCheck, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { LINK_ADMIN, WHATSAPP_NUMERO, linkWhatsApp } from "./shared";
 
 export function Footer() {
   const currentYear = 2026;
@@ -12,20 +14,21 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-slate-800/80">
           {/* Brand Info */}
-          <div className="lg:col-span-5 space-y-5">
-            <div className="relative h-12 w-48 bg-white/5 rounded-xl p-2 inline-block">
+          <div className="lg:col-span-5 space-y-6">
+            <div className="relative h-16 w-56 p-2 inline-block">
               <Image
                 src="/brand/logo.png"
                 alt="BSB Engenharia Condominial"
                 fill
-                className="object-contain"
+                className="object-contain object-left"
               />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               Engenharia diagnóstica, laudos periciais e gestão predial preventiva
-              em conformidade com as normas ABNT. Mais segurança e valorização para o seu patrimônio.
+              em estrita conformidade com as normas ABNT. Resguardo legal e segurança
+              para síndicos, conselheiros e condôminos em Brasília.
             </p>
-            <div className="pt-2">
+            <div className="pt-1">
               <StoreBadges />
             </div>
           </div>
@@ -33,7 +36,7 @@ export function Footer() {
           {/* Quick Links */}
           <div className="lg:col-span-3 space-y-4 text-sm">
             <h4 className="font-bold text-white text-base">Plataforma</h4>
-            <ul className="space-y-2.5 text-slate-400">
+            <ul className="space-y-3 text-slate-400 font-medium">
               <li>
                 <a href="#recursos" className="hover:text-orange-400 transition-colors">
                   Recursos do Aplicativo
@@ -45,16 +48,23 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#comparativo" className="hover:text-orange-400 transition-colors">
+                  Comparativo de Governança
+                </a>
+              </li>
+              <li>
                 <a href="#faq" className="hover:text-orange-400 transition-colors">
                   Perguntas Frequentes
                 </a>
               </li>
               <li>
                 <a
-                  href="https://admin.bsbengenhariacondominial.com.br"
-                  className="hover:text-orange-400 transition-colors"
+                  href={LINK_ADMIN}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 hover:text-orange-300 font-bold flex items-center gap-1"
                 >
-                  Portal Web do Síndico
+                  Portal do Síndico / Gestão →
                 </a>
               </li>
             </ul>
@@ -62,19 +72,30 @@ export function Footer() {
 
           {/* Contact & Location */}
           <div className="lg:col-span-4 space-y-4 text-sm text-slate-400">
-            <h4 className="font-bold text-white text-base">Contato & Atendimento</h4>
-            <div className="space-y-2.5">
-              <p className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-orange-400 shrink-0" />
-                <span>Brasília - DF • Atendimento em todo o Distrito Federal</span>
+            <h4 className="font-bold text-white text-base">BSB Engenharia Condominial</h4>
+            <div className="space-y-3">
+              <p className="flex items-start gap-2.5">
+                <MapPin className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" />
+                <span>Setor Central C 1, 1/12 - Sala 429, Taguatinga Centro, Brasília - DF</span>
               </p>
-              <p className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-orange-400 shrink-0" />
-                <span>contato@bsbengenhariacondominial.com.br</span>
+              <p className="flex items-center gap-2.5">
+                <Phone className="h-4 w-4 text-orange-400 shrink-0" />
+                <span>(61) 99698-9009</span>
               </p>
-              <p className="flex items-center gap-2">
+              <p className="flex items-center gap-2.5">
+                <MessageCircle className="h-4 w-4 text-emerald-400 shrink-0" />
+                <a
+                  href={linkWhatsApp("footer")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Atendimento via WhatsApp Comercial
+                </a>
+              </p>
+              <p className="flex items-center gap-2.5">
                 <ShieldCheck className="h-4 w-4 text-emerald-400 shrink-0" />
-                <span>Empresa credenciada no CREA-DF</span>
+                <span>Empresa Homologada no CREA-DF</span>
               </p>
             </div>
           </div>
