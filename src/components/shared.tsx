@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-export const LINK_APP_STORE = "https://apps.apple.com/app/id6744043956";
+export const LINK_APP_STORE = "https://apps.apple.com/br/app/sgp-condominios/id6754469393";
 export const LINK_GOOGLE_PLAY = "https://play.google.com/store/apps/details?id=br.com.bsbengenhariacondominial.sgp";
 export const LINK_ADMIN = "https://bsbengenhariacondominial.com.br";
 export const LINK_SITE_INSTITUCIONAL = "https://bsbengenhariacondominial.com";

@@ -26,20 +26,35 @@ export function PhoneMockupVideo({
   }, []);
 
   const togglePlay = () => {
-    if (!videoRef.current) return;
-    if (isPlaying) {
-      videoRef.current.pause();
-      setIsPlaying(false);
+    const vid = videoRef.current;
+    if (!vid) return;
+    if (vid.paused) {
+      vid.play().catch(() => {});
     } else {
-      videoRef.current.play().catch(() => {});
-      setIsPlaying(true);
+      vid.pause();
     }
   };
 
   const toggleMute = () => {
-    if (!videoRef.current) return;
-    videoRef.current.muted = !isMuted;
-    setIsMuted(!isMuted);
+    const vid = videoRef.current;
+    if (!vid) return;
+    vid.muted = !vid.muted;
+    setIsMuted(vid.muted);
+  };
+
+  const handleFullscreen = () => {
+    const vid = videoRef.current as HTMLVideoElement & {
+      webkitEnterFullscreen?: () => void;
+      webkitRequestFullscreen?: () => Promise<void>;
+    };
+    if (!vid) return;
+    if (vid.requestFullscreen) {
+      vid.requestFullscreen().catch(() => {});
+    } else if (vid.webkitEnterFullscreen) {
+      vid.webkitEnterFullscreen();
+    } else if (vid.webkitRequestFullscreen) {
+      vid.webkitRequestFullscreen().catch(() => {});
+    }
   };
 
   const features = [
@@ -108,6 +123,8 @@ export function PhoneMockupVideo({
               loop
               muted={isMuted}
               playsInline
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
               className="absolute inset-0 h-full w-full object-cover z-10 opacity-90 transition-opacity duration-500"
               onError={(e) => {
                 // If mp4 is not yet present, gracefully fall back to the live animated UI preview
@@ -214,6 +231,14 @@ export function PhoneMockupVideo({
             title={isMuted ? "Ativar som" : "Mudo"}
           >
             {isMuted ? <VolumeX className="h-3.5 w-3.5" /> : <Volume2 className="h-3.5 w-3.5" />}
+          </button>
+          <div className="h-3 w-px bg-slate-700" />
+          <button
+            onClick={handleFullscreen}
+            className="text-slate-300 hover:text-white transition-colors"
+            title="Tela cheia"
+          >
+            <Maximize2 className="h-3.5 w-3.5" />
           </button>
         </div>
       </div>
