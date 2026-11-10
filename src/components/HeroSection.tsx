@@ -55,7 +55,8 @@ export function HeroSection() {
               {/* Subheadline */}
               <Revelar atraso={0.15}>
                 <p className="max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed mx-auto lg:mx-0">
-                  O aplicativo definitivo da <strong>BSB Engenharia Condominial</strong>.
+                  O <strong>SGP (Sistema de Gestão Patrimonial)</strong> é o aplicativo da{" "}
+                  <strong>BSB Engenharia Condominial</strong> para o seu condomínio.
                   Acompanhe manutenções obrigatórias pela <strong>NBR 5674</strong>,
                   aprove orçamentos com governança de 3 cotações, acesse laudos com ART
                   e consulte a prestação de contas do seu condomínio em tempo real.

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { WHATSAPP_NUMERO } from "@/components/shared";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade | SGP Condomínios",
+  title: "Privacidade | SGP",
   description:
     "Como os apps SGP Condomínios e SGP Morador e o site de gestão tratam os dados pessoais, de acordo com a LGPD.",
 };

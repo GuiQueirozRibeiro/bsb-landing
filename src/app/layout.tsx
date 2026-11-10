@@ -10,11 +10,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bsbengenhariacondominial.com.br"),
-  title: "SGP Condomínios | BSB Engenharia Condominial",
+  title: "SGP Condomínios",
   description:
-    "Aplicativo oficial da BSB Engenharia Condominial para síndicos e gestores. Manutenção preventiva sob a NBR 5674, laudos com ART no CREA-DF, governança com 3 cotações e transparência financeira.",
+    "SGP (Sistema de Gestão Patrimonial) é o aplicativo da BSB Engenharia Condominial para síndicos, gestores e moradores. Manutenção preventiva sob a NBR 5674, laudos com ART no CREA-DF, governança com 3 cotações e transparência financeira.",
   openGraph: {
-    title: "SGP Condomínios | A engenharia do seu condomínio na palma da mão",
+    title: "SGP Condomínios: Sistema de Gestão Patrimonial",
     description:
       "Aplicativo oficial da BSB Engenharia Condominial. Manutenção NBR 5674, governança e laudos técnicos com ART.",
     url: "https://bsbengenhariacondominial.com.br",

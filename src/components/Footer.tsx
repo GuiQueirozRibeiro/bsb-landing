@@ -15,13 +15,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-slate-800/80">
           {/* Brand Info */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="relative h-16 w-56 p-2 inline-block">
-              <Image
-                src="/brand/logo.png"
-                alt="BSB Engenharia Condominial"
-                fill
-                className="object-contain object-left"
-              />
+            {/* Logo em cartão claro: as letras escuras somem no fundo do rodapé */}
+            <div className="inline-flex rounded-xl bg-white px-4 py-3 shadow-sm">
+              <div className="relative h-12 w-44">
+                <Image
+                  src="/brand/logo.png"
+                  alt="BSB Engenharia Condominial"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               Engenharia diagnóstica, laudos periciais e gestão predial preventiva
