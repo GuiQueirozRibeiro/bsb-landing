@@ -111,7 +111,7 @@ export function Footer() {
               Termos de Uso
             </a>
             <span>•</span>
-            <a href="#" className="hover:text-slate-400">
+            <a href="/privacidade" className="hover:text-slate-400">
               Política de Privacidade
             </a>
           </div>
